@@ -22,9 +22,9 @@ int main() {
   std::sort(list1.begin(), list1.end());
   std::sort(list2.begin(), list2.end());
 
-  for (int i = 0; i < list1.size(); i++) {
+  for (int i = 0, j = 0; i < list1.size(); i++) {
     total_duplicates = 0;
-    int j = 0;
+
     while (j < list2.size() && list1[i] > list2[j]) {
       j++;
     }

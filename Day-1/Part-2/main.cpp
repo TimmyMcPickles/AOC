@@ -29,12 +29,15 @@ int main() {
       j++;
     }
 
-    while (j < list2.size() &&
-           list1[i] == list2[j]) { // This code was mostly borrowed from reddit
-      total_duplicates++;          // Thanks to ednl in the day 1 discussion
-      j++;                         // thread
-           // https://www.reddit.com/r/adventofcode/comments/1h44xmb/comment/lzw5k8j/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+    while (j < list2.size() &&list1[i] == list2[j]) {
+      total_duplicates++;
+      j++;
     }
+           // https://www.reddit.com/r/adventofcode/comments/1h44xmb/comment/lzw5k8j/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+           // This code was mostly borrowed from reddit
+           // Thanks to ednl in the day 1 discussion
+           // thread
+
     sim += list1[i] * total_duplicates;
   }
 

@@ -4,7 +4,7 @@
 #include <iostream>
 
 int main(){
-    std::ifstream file("input.txt");
+    std::ifstream file("../input.txt");
     std::vector<int> list1, list2;
     int x, y;
     int distance = 0;
